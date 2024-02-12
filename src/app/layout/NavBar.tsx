@@ -3,15 +3,13 @@ import { Nav, Navbar } from 'react-bootstrap'
 
 export default function NavBar() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar style={{marginTop: "1em", marginBottom: "5em", fontWeight: "600"}} expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link as={NavLink} to='/'>01. Home</Nav.Link>
-                    <Nav.Link as={NavLink} to='/projects'>02. Projects</Nav.Link>
-                    <Nav.Link as={NavLink} to='/about'>03. About</Nav.Link>
-                    <Nav.Link as={NavLink} to='/resume'>04. Résumé</Nav.Link>
-                    <Nav.Link as={NavLink} to='/contact'>05. Contact</Nav.Link>
+                <Nav className="ml-auto">
+                    <Nav.Link style={{paddingRight: "5em"}} as={NavLink} to='/'>01. Home</Nav.Link>
+                    <Nav.Link style={{paddingRight: "5em"}} as={NavLink} to='/projects'>02. Projects</Nav.Link>
+                    <Nav.Link style={{paddingRight: "5em"}} as={NavLink} to='/about'>03. About</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

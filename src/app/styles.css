@@ -1,6 +1,19 @@
+body {
+    background-color: #f1ffe3;
+}
+
 h1 {
     font-weight: 600;
-    font-size: 10vw;
+    font-size: 7vw;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3vw;
+}
+
+p {
+    font-size: 1.25rem;
 }
 
 .first-transition {
@@ -17,4 +30,17 @@ h1 {
 
 .fourth-transition {
     transition: opacity 2s ease 4s;
+}
+
+.fifth-transition {
+    transition: opacity 2s ease 5s;
+}
+
+.card-link {
+    background-color: #f1ffe3;
+}
+
+.card-link:hover {
+    background-color: #d0e0be;
+    cursor: pointer;
 }
